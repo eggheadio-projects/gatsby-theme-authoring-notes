@@ -28,7 +28,7 @@ exports.onPreBootstrap = ({ reporter }) => {
   }
 };
 ```
-Now, step 1 of the process is complete.
+With this code, if the data directory doesn't exist, it will create it. Now we have ensured that the data directory exists.
 
 
 ## Resources
