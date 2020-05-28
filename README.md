@@ -1,7 +1,5 @@
 ## Table of Contents
 
-- [00-Intro and Welcome](00-intro-and-welcome.md)
-
 - [01-Set up Yarn Workspaces for Gatsby Theme Development](01-set-up-yarn-workspaces-for-gatsby-theme-development.md)
 
 - [02-Add Static Data to a Gatsby Theme](02-add-static-data-to-a-gatsby-theme.md)
@@ -29,4 +27,3 @@
 - [13-Consume a Theme in a Gatsby Application](13-consume-a-theme-in-a-gatsby-application.md)
 
 - [14-Use Component Shadowing to Override Gatsby Theme Components](14-use-component-shadowing-to-override-gatsby-theme-components.md)
-

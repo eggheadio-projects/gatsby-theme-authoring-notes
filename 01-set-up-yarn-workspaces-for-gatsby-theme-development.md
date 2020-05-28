@@ -40,7 +40,7 @@ Before opening up the terminal, here's what each package.json file should look l
 }
 ```
 
-### package.json (in main project folder)
+### package.json (main project folder)
 ```javascript
 {
   "private": true,
@@ -109,9 +109,18 @@ yarn workspace gatsby-theme-events develop
 ```
 The console provides you with the localhost address for your project, which should give you a 404 page.
 
+
 ### If you have an error on your Gatsby page
 My page appeared not with a 404, as it did with the instructor, but instead with an error. If this is the case, you may need to switch NODE_ENV from production to development.
 
+For windows:
+```
+set NODE_ENV=development
+```
+Linux or other unix based system:
+```
+export NODE_ENV=production
+```
 
 ## Resources
 - [Yarn Workspaces, Why and How?](https://classic.yarnpkg.com/en/docs/workspaces/)
