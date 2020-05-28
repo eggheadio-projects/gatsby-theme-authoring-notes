@@ -3,6 +3,8 @@
 **[📹 Video](https://egghead.io/lessons/gatsby-display-sorted-data-with-usestaticquery-in-gatsby)**
 
 ## Showing Event Data
+Our goal now is to display event data on our page.
+
 In events.js:
 ```javascript
 import {graphql, useStaticQuery } from 'gatsby';
@@ -41,28 +43,28 @@ We need to now create these two new components. Within gatsby-theme-events/src, 
 
 Within layout.js, we will define our layout:
 ```javascript
-import React from 'react';
+import React from "react"
 
-const Layout = ({ children }) => {
+const Layout = ({ children }) => (
   <div>
-    <h1>Gatsby Events Themes</h1>
+    <h1>Gatsby Events Theme</h1>
     {children}
   </div>
-}
+)
 
-export default Layout;
+export default Layout
 ```
 Within our components folder we'll now create another file for our EventList called event-list.js.
 
 Within that we'll define our EventList component:
 ```javascript
-import React from 'react'
+import React from "react"
 
-const EventList = ({ events }) => {
+const EventList = ({ events }) => (
   <pre>{JSON.stringify(events, null, 2)}</pre>
-};
+)
 
-export default EventList;
+export default EventList
 ```
 Now we must go back to events.js and make sure to import these components:
 ```javascript
@@ -75,7 +77,7 @@ yarn workspace gatsby-theme-events develop
 ```
 At localhost:8000, our layout shows up containing a dump of each event and its data.
 
-## Update the event list component
+## Update the event list component to format event data
 Instead of raw data, we want to display the event data in markup.
 
 In event-list.js, we refactor our EventList component:
