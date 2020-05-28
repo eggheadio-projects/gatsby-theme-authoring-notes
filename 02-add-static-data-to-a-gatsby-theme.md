@@ -37,7 +37,7 @@ In order to read the .yaml file above, we must install new dependencies as follo
 ```
 yarn workspace gatsby-theme-events add gatsby-source-filesystem gatsby-transformer-yaml
 ```
-
+## gatsby-config.js
 Next, within the gatsby-theme-events folder, create a gatsby-config.js
 
 Following the lesson, our gatsby-config.js should look like:
@@ -59,6 +59,7 @@ module.exports = {
   ]
 }
 ```
+## GraphQL
 After running
 ```
 yarn workspace gatsby-theme-events develop
@@ -71,3 +72,4 @@ Opening up allEvent then nodes on the side bar allows us to query properties of 
 ## Resources
 - [Gatsby Plugin Configuration](https://www.gatsbyjs.org/docs/gatsby-config/#plugins)
 - [YAML Syntax](https://docs.ansible.com/ansible/latest/reference_appendices/YAMLSyntax.html)
+- [GraphQL](https://graphql.org/)
