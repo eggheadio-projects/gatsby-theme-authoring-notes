@@ -68,7 +68,6 @@ We can access GraphQL at localhost:8000/\_\_\_graphql
 
 Opening up allEvent then nodes on the side bar allows us to query properties of our events.
 
-
 ## Resources
 - [Gatsby Plugin Configuration](https://www.gatsbyjs.org/docs/gatsby-config/#plugins)
 - [YAML Syntax](https://docs.ansible.com/ansible/latest/reference_appendices/YAMLSyntax.html)
