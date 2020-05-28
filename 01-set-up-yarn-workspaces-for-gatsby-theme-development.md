@@ -113,13 +113,13 @@ The console provides you with the localhost address for your project, which shou
 ### If you have an error on your Gatsby page
 My page appeared not with a 404, as it did with the instructor, but instead with an error. If this is the case, you may need to switch NODE_ENV from production to development.
 
-For windows:
+In the terminal, for windows:
 ```
 set NODE_ENV=development
 ```
-Linux or other unix based system:
+Linux or other Unix based system:
 ```
-export NODE_ENV=production
+export NODE_ENV=development
 ```
 
 ## Resources
