@@ -34,6 +34,11 @@ Run the following in termianl:
 ```
 yarn global add gatsby-cli
 ```
+## Run the site
+To start the site, run the following in the terminal at the /theme-test directory:
+```
+gatsby develop
+```
 At localhost:8000, we can see our theme installed.
 
 To add some data, create a data/events.yml in the root project folder.
