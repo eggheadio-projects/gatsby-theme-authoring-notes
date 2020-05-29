@@ -141,6 +141,15 @@ export const theme = {
   }
 };
 ```
+## IMPORTANT
+For me, this important piece of information is cut off in the video:
+At the bottom of your theme.js, remember to export the theme!:
+```javascript
+export const theme = {
+  // ...
+};
+export default theme;
+```
 
 ## Resources
 - [Viewport concepts](https://developer.mozilla.org/en-US/docs/Web/CSS/Viewport_concepts)
