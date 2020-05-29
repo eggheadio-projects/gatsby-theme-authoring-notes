@@ -38,6 +38,7 @@ We can now check if this works:
 ```
 yarn workspace site develop
 ```
+
 ## Resources
 - [Gatsby - Use and override a theme with component shadowing](https://www.gatsbyjs.org/tutorial/building-a-theme/#use-and-override-a-theme-with-component-shadowing)
 -[Gatsby - What is Component Shadowing?](https://www.gatsbyjs.org/blog/2019-04-29-component-shadowing/)
