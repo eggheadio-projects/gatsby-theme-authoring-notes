@@ -77,38 +77,40 @@ export const theme = {
   },
 }
 ```
-We can finally start *setting some styles*. Theme UI provides some** special components**, including *Layout, Header, Main, and Container*.
+We can finally start *setting some styles*. Theme UI provides some ** special components**.
+
+**DEPRECATION WARNING: The components Header, Main, and Layout are now deprecated as of version 0.3.** In order to continue with the lesson, we will use the theme.js from the Gatsby docs found in [resources](#resources).
+
+To our theme, we define heading and container styles, like so:
 ```javascript
 export const theme = {
   // ...
-  styles: {
-    Layout: {
-      color: 'gray.2',
-      fontFamily: 'body',
-      fontSize: 1,
-      lineHeight: 'body'
-    },
-    Header: {
-      backgroundColor: 'primary',
-      color: 'background',
-      fontWeight: 'bold',
-      margin: '0 auto',
-      maxWidth: 'max',
+  text: {
+    heading: {
+      backgroundColor: "primary",
+      color: "background",
+      fontWeight: "bold",
+      margin: "0 auto",
+      maxWidth: "max",
       padding: 3,
-      width: 'default',
+      width: "default",
       a: {
-        color: 'inherit'
-      }
+        color: "inherit",
+      },
     },
-    Main: {
-      margin: '0 auto',
-      maxWidth: 'max',
-      width: 'default'
+  },
+  layout: {
+    container: {
+      margin: "0 auto",
+      maxWidth: "max",
+      width: "default",
+      padding: 3,
+      color: "gray.2",
+      fontFamily: "body",
+      fontSize: 1,
+      lineHeight: "body",
     },
-    Container: {
-      padding: 3
-    },
-  }
+  },
 }
 ```
 Finally, we can *design basic HTML markup*:

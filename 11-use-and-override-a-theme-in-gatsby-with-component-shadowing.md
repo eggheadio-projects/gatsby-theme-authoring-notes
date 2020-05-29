@@ -2,15 +2,19 @@
 
 **[📹 Video](https://egghead.io/lessons/gatsby-use-and-override-a-theme-in-gatsby-with-component-shadowing)**
 
+## Using the theme
+
 To use the theme we defined in the previous lesson, we need to use *component shadowing* in order to override the default theme in gatsby-plugin-theme-ui
 - *“Component shadowing” is a mechanism to override the default rendering provided by a Gatsby theme*
 - Check out [resources](#resources) for a blog post on component shadowing.
 
 In gatsby-theme-events/src, we create a folder **with the same name as the theme in the source field**, and we *"shadow"* the index.js where the theme is defined.
 
-In other words, in gatsby-theme-events/src, create gatsby-theme-ui/index.js
+## Issues I Faced
+**In the video, the instructor creates gatsby-theme-ui/index.js within gatsby-theme-events/src. However, my Gatsby site wouldn't compile unless I named the folder containing index.js "gatsby-plugin-theme-ui"**
 
-Within gatsby-theme-ui/index.js:
+## Back to using the theme
+Within gatsby-plugin-theme-ui/index.js:
 ```javascript
 import { theme } from "../theme"
 
@@ -18,10 +22,10 @@ export default theme
 ```
 Now we'll refactor our **Layout** component to use Theme UI.
 
-Within layout.js:
+Because **Layout**, **Header**, and **Main** are **deprecated**, we will import our theme components like so:
 ```javascript
 import React from "react"
-import { Layout as ThemeLayout, Header, Main, Container } from 'theme-ui';
+import { Heading, Container } from "theme-ui"
 
 const Layout = ({ children }) => (
   <ThemeLayout>
@@ -39,6 +43,43 @@ We can now check if this works:
 yarn workspace site develop
 ```
 
+## Using the Styled import
+We can also use the Styled import from theme-ui.
+
+In event-list.js:
+```javascript
+import React from 'react';
+import { Link } from 'gatsby';
+import { Styled } from 'theme-ui';
+
+const EventList = ({ events }) => {
+  const meta = useSiteMetadata();
+
+  return (
+    <>
+      <Styled.h1>{meta.headline}</Styled.h1>
+      <Styled.ul>
+        {events.map(event => (
+          <Styled.li key={event.id}>
+            <strong>
+              <Link to={event.slug}>{event.name}</Link>
+            </strong>
+            <br />
+            {new Date(event.startDate).toLocaleDateString('en-US', {
+              month: 'long',
+              day: 'numeric',
+              year: 'numeric'
+            })}{' '}
+            in {event.location}
+          </Styled.li>
+        ))}
+      </Styled.ul>
+    </>
+  );
+};
+
+export default EventList;
+```
 ## Resources
 - [Gatsby - Use and override a theme with component shadowing](https://www.gatsbyjs.org/tutorial/building-a-theme/#use-and-override-a-theme-with-component-shadowing)
 -[Gatsby - What is Component Shadowing?](https://www.gatsbyjs.org/blog/2019-04-29-component-shadowing/)
