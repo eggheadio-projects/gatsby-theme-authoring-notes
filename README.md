@@ -1,6 +1,6 @@
 # [Gatsby Theme Authoring](https://egghead.io/courses/gatsby-theme-authoring)
 
-## ## Instructor - [Jason Lengstorf](https://egghead.io/instructors/jason-lengstorf)
+## Instructor - [Jason Lengstorf](https://egghead.io/instructors/jason-lengstorf)
 
 <p align="center"><img src="https://d2eip9sf3oo6c2.cloudfront.net/series/square_covers/000/000/311/full/EGH_GatsbyThemes_Final.png" width="300"/></p>
 

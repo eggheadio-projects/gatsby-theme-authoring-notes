@@ -8,7 +8,7 @@ We return once more to component shadowing to modify components.
 This time, we plan to **change theme colors in our theme-test project**.
 
 ## Issues I Faced
-Following the lesson, I ran into issues importing the theme. **These issues were fixed after following the written lesson found in the [resources](#resources) below.** The following notes follow the written lesson, and employ lodash.merge
+Following the lesson, I ran into issues importing the theme. **These issues were fixed after following the written lesson found in the [resources](#resources) below.** The following notes pertain to the written lesson, and employ lodash.merge
 
 ## Back to the Blue Banner
 In the root folder of theme-test, add src/gatsby-plugin-theme-ui/index.js
