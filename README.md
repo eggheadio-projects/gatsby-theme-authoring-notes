@@ -18,7 +18,7 @@
 
 - [09-Configure a Gatsby Theme to Take Options](09-configure-a-gatsby-theme-to-take-options.md)
 
-- [10-Make Gatsby Themes extendable with gatsby-theme-ui](010-make-gatsby-themes-extendable-with-gatsby-theme-ui.md)
+- [10-Make Gatsby Themes extendable with gatsby-theme-ui](10-make-gatsby-themes-extendable-with-gatsby-theme-ui.md)
 
 - [11-Use and Override a Theme in Gatsby with Component Shadowing](11-use-and-override-a-theme-in-gatsby-with-component-shadowing.md)
 
