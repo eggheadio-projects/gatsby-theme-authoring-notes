@@ -81,5 +81,6 @@ const EventList = ({ events }) => {
 export default EventList;
 ```
 ## Resources
+- [Lesson 11 Code](https://github.com/ParkerGits/authoring-gatsby-themes/tree/11-use-and-override-a-theme-in-gatsby-with-component-shadowing)
 - [Gatsby - Use and override a theme with component shadowing](https://www.gatsbyjs.org/tutorial/building-a-theme/#use-and-override-a-theme-with-component-shadowing)
 -[Gatsby - What is Component Shadowing?](https://www.gatsbyjs.org/blog/2019-04-29-component-shadowing/)

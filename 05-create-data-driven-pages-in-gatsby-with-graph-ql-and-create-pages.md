@@ -79,4 +79,5 @@ And navigate to localhost:8000 to see "TODO build the events page"
 We can also navigate to localhost:8000/404 to see the pages for each of our events.
 
 ## Resources
+- [Lesson 5 Code](https://github.com/ParkerGits/authoring-gatsby-themes/tree/05-gatsby-create-data-driven-pages-in-gatsby-with-graphql-and-createpages)
 - [Create data-driven pages using GraphQL and createPages](https://www.gatsbyjs.org/tutorial/building-a-theme/#create-data-driven-pages-using-graphql-and-createpages)

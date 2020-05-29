@@ -68,6 +68,7 @@ Open up localhost:8000/\_\_\_graphql to view our newly formatted event nodes
 The event type Date allows us to view *relative time* or *formatted time* for our **startDate** and **endDate**.
 
 ## Resources
+- [Lesson 4 Code](https://github.com/ParkerGits/authoring-gatsby-themes/tree/04-gatsby-set-up-to-create-data-driven-pages-in-gatsby)
 - [Regular Expressions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions)
 - [Gatsby - Define the Event type](https://www.gatsbyjs.org/tutorial/building-a-theme/#define-the-event-type)
 - [Gatsby - Define resolvers for any custom fields (slug)](https://www.gatsbyjs.org/tutorial/building-a-theme/#define-resolvers-for-any-custom-fields-slug)

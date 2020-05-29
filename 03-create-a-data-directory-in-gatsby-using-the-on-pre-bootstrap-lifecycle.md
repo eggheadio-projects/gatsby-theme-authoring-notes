@@ -32,4 +32,5 @@ With this code, **if the data directory doesn't exist, it will create it.** Now 
 
 
 ## Resources
+- [Lesson 3 Code](https://github.com/ParkerGits/authoring-gatsby-themes/tree/03-gatsby-create-a-data-directory-in-gatsby-using-the-onprebootstrap-lifecycle)
 - [Gatsby - Create a data directory using the onPreBootstrap lifecycle](https://www.gatsbyjs.org/tutorial/building-a-theme/#create-a-data-directory-using-the-onprebootstrap-lifecycle)

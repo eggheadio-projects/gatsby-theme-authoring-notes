@@ -87,4 +87,5 @@ We should see our events displayed on localhost:8000/events.
 The URL shows that our config options are being taken into account.
 
 ## Resoures
+- [Lesson 9 Code](https://github.com/ParkerGits/authoring-gatsby-themes/tree/09-configure-a-gatsby-theme-to-take-options)
 - [Gatsby - Configure a theme to take options](https://www.gatsbyjs.org/tutorial/building-a-theme/#configure-a-theme-to-take-options)

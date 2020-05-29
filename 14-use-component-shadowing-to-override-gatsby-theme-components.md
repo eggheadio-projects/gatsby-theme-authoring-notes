@@ -69,4 +69,5 @@ gatsby develop
 ```
 Allows us to see the effect of our component shadowing.
 ## Resources
+- [Lesson 14 Code](https://github.com/ParkerGits/authoring-gatsby-themes/tree/14-use-component-shadowing-to-override-gatsby-theme-components)
 - [Gatsby - Use component shadowing to override theme components](https://www.gatsbyjs.org/tutorial/building-a-theme/#use-component-shadowing-to-override-theme-components)

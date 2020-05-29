@@ -53,4 +53,5 @@ In the events.yml:
 ```
 Back at localhost:8000 we can see our event displayed with just a few lines of code.
 ## Resources
+- [Lesson 13 Code](https://github.com/ParkerGits/authoring-gatsby-themes/tree/13-consume-a-theme-in-a-gatsby-application)
 - [Consume a theme in a Gatsby application](https://www.gatsbyjs.org/tutorial/building-a-theme/#consume-a-theme-in-a-gatsby-application)

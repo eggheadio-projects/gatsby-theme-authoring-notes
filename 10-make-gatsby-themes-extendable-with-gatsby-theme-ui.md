@@ -154,5 +154,6 @@ export default theme;
 ```
 
 ## Resources
+- [Lesson 10 Code](https://github.com/ParkerGits/authoring-gatsby-themes/tree/10-make-gatsby-themes-extendable-with-gatsby-theme-ui)
 - [Viewport concepts](https://developer.mozilla.org/en-US/docs/Web/CSS/Viewport_concepts)
 - [Gatsby - Make themes extendable with gatsby-plugin-theme-ui](https://developer.mozilla.org/en-US/docs/Web/CSS/Viewport_concepts)

@@ -64,4 +64,5 @@ const Event = ({ name, location, url, startDate, endDate }) => (
 ```
 Our event data for individual event pages is now formatted.
 ## Resources
+- [Lesson 7 Code](https://github.com/ParkerGits/authoring-gatsby-themes/tree/07-display-and-query-data-by-id-with-gatsby-context-and-use-static-query)
 - [Gatsby - Display and query data by id with context and static queries](https://www.gatsbyjs.org/tutorial/building-a-theme/#display-and-query-data-by-id-with-context-and-static-queries)

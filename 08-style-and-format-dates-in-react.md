@@ -67,5 +67,6 @@ June 20-21 2019
 
 This may be due to a change in toLocaleDateString() or due to my own personal settings. If you also encounter this issue and have an easy fix, please feel free to contribute!
 ## Resources
+- [Lesson 8 Code](https://github.com/ParkerGits/authoring-gatsby-themes/tree/08-style-and-format-dates-in-react)
 - [Gatsby - Style and format dates in React](https://www.gatsbyjs.org/tutorial/building-a-theme/#style-and-format-dates-in-react)
 - [JavaScript Date Object Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date)

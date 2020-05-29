@@ -40,4 +40,5 @@ npm publish --access public
 
 Now it’s published! After publishing, you’ll be able to find your theme on npm at npmjs.com/{yourpackagename}
 ## Resources
+- [Lesson 12 Code](https://github.com/ParkerGits/authoring-gatsby-themes/tree/12-publish-a-gatsby-theme-to-npm)
 - [Gatsby - Publish a theme to npm](https://www.gatsbyjs.org/tutorial/building-a-theme/#publish-a-theme-to-npm)
