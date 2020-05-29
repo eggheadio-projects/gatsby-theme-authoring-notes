@@ -74,7 +74,7 @@ To test, run the following in the terminal:
 ```
 yarn workspace site develop
 ```
-We should be able to navigate to an events page, but we don't have any events displayed yet.
+We should be able to navigate to an events page, but **we don't have any events displayed yet**.
 
 Within the events directory that has just been created, copy over the events.yml file from the other events directory.
 

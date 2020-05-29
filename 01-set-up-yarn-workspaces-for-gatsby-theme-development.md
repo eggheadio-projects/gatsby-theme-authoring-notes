@@ -52,7 +52,7 @@ Before opening up the terminal, here's what each package.json file should look l
 }
 ```
 
-Now, in the terminal, we add **React, React-DOM, Gatsby,** and *our Gatsby Theme* to Site:
+Now, in the terminal, we add **React, React-DOM, Gatsby,** and **our Gatsby Theme** to Site:
 ```
 yarn workspace site add gatsby react react-dom gatsby-theme-events@*
 ```

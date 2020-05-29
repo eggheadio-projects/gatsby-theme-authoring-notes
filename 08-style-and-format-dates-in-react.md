@@ -40,7 +40,7 @@ const EventDate = ({ startDate, endDate }) => {
   )
 }
 ```
-We can now refactor our Event component to include EventDate:
+We can now refactor our **Event** component to include **EventDate**:
 ```javascript
 const Event = ({ name, location, url, startDate, endDate }) => (
   <div>
@@ -57,7 +57,7 @@ const Event = ({ name, location, url, startDate, endDate }) => (
 We can now view our pages on localhost:8000 and see that our one day, multiple day, and multiple month event dates are being displayed correctly.
 
 ## Personal Issues
-For me personally, the dates for multiple day events were not displaying as they did in the video. For example, on the DinosaurJS page, the date was displayed as:
+For me personally, the dates for multiple day events were not displaying as they did in the video. For example, on the DinosaurJS page, the date was displayed as
 
 June 20-2019 (day:21)
 

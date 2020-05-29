@@ -4,6 +4,7 @@
 
 We can make our Gatsby theme styles *"extendable"* using the **gatsby-plugin-theme-ui** package.
 - How is it extendable? gatsby-plugin-theme-ui takes a *global theme context object* and makes it *available to all themes that use gatsby-plugin-theme-ui*.
+
 Install the package via terminal:
 ```
 yarn workspace gatsby-theme-events add gatsby-plugin-theme-ui theme-ui @emotion/core @emotion/styled @mdx-js/react
