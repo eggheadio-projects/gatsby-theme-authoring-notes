@@ -17,7 +17,7 @@ The basePath defaults to the root path, and the createPage method creates a page
 
 Next, we'll set it up so we can query for events.
 
-The following will allow us to retrieve all events, sorted by start date, in ascending order, and will allow us to handle the error in case the GraphQL query failed.
+The following will allow us to **retrieve all events, sorted by start date, in ascending order,** and will **allow us to handle the error in case the GraphQL query failed.**
 ```javascript
   const result = await graphql(`
     query {

@@ -3,11 +3,11 @@
 **[📹 Video](https://egghead.io/lessons/gatsby-style-and-format-dates-in-react)**
 
 ## Display reader-friendly dates
-We're now going to take a look at styling and formatting dates in React.
+We're now going to take a look at **styling and formatting dates in React**.
 
-At the moment, we are currently displaying the date by separating the startDate and the endDate with a hyphen, but this isn't ideal.
+At the moment, *we are currently displaying the date by separating the startDate and the endDate with a hyphen*, **but this isn't ideal**.
 
-We're going to refactor the Event component to improve the way that the date is displayed.
+We're going to *refactor the Event component to improve the way that the date is displayed*.
 - If the event is one day, we want it to display like June 21 2019
 - For events spanning multiple days, we want the date to look like June 21-23 2019
 - If the event spans across months, we want it to look like June 30-July 2 2019
@@ -65,7 +65,7 @@ instead of
 
 June 20-21 2019
 
-This may be due to a change in toLocaleDateString() or due to my own personal settings. If you encounter this issues as well and have a fix, please feel free to contribute!
+This may be due to a change in toLocaleDateString() or due to my own personal settings. If you also encounter this issue and have an easy fix, please feel free to contribute!
 ## Resources
 - [Gatsby - Style and format dates in React](https://www.gatsbyjs.org/tutorial/building-a-theme/#style-and-format-dates-in-react)
 - [JavaScript Date Object Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date)

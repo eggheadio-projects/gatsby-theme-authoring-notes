@@ -3,7 +3,7 @@
 **[📹 Video](https://egghead.io/lessons/gatsby-display-sorted-data-with-usestaticquery-in-gatsby)**
 
 ## Showing Event Data
-Our goal now is to display event data on our page.
+Our goal now is to *display event data on our page*.
 
 In events.js:
 ```javascript
@@ -37,8 +37,8 @@ const EventsTemplate = () => {
 }
 ```
 Above, we've defined two new components, Layout and EventList, and we've refactored the render method to use these components and pass in the events data to the EventList component.
-- Layout will define our general layout across our pages
-- EventList will be list our events
+- Layout will **define our general layout across our pages**
+- EventList will **list our events**
 We need to now create these two new components. Within gatsby-theme-events/src, create a components folder containing layout.js
 
 Within layout.js, we will define our layout:
@@ -66,7 +66,7 @@ const EventList = ({ events }) => (
 
 export default EventList
 ```
-Now we must go back to events.js and make sure to import these components:
+Now we must go back to events.js and make sure to *import these components*:
 ```javascript
 import Layout from '../components/layout'
 import EventList from '../components/event-list'
@@ -78,7 +78,7 @@ yarn workspace gatsby-theme-events develop
 At localhost:8000, our layout shows up containing a dump of each event and its data.
 
 ## Update the event list component to format event data
-Instead of raw data, we want to display the event data in markup.
+Instead of raw data, **we want to display the event data in markup**.
 
 In event-list.js, we refactor our EventList component:
 ```javascript

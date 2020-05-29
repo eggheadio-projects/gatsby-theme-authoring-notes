@@ -3,7 +3,7 @@
 **[📹 Video](https://egghead.io/lessons/gatsby-set-up-to-create-data-driven-pages-in-gatsby)**
 
 ## Defining the event type
-To satisfy condition 2 in our list, we add the following to gatsby-node.js
+To satisfy the second condition in our list,*define the event type*, we add the following to gatsby-node.js
 ```javascript
 exports.sourceNodes = ({ actions }) => {
   actions.createTypes(`
@@ -65,7 +65,7 @@ yarn workspace gatsby-theme-events develop
 ```
 Open up localhost:8000/\_\_\_graphql to view our newly formatted event nodes
 
-The event type Date allows us to view relative time or formatted time for our startDate and endDate
+The event type Date allows us to view relative time or formatted time for our startDate and endDate.
 
 ## Resources
 - [Regular Expressions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions)

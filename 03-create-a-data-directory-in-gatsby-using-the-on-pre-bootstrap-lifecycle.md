@@ -12,7 +12,7 @@ In our gatsby-node.js, we need to
 4. Query for events and create pages
 
 ## Making sure the data directory exists
-If you fire up your theme, and the “data” directory doesn’t exist, gatsby-source-filesystem will throw an error. To guard against this, you’ll use the onPreBootstrap API hook to check if the data directory exists, and, if not, create it:
+**gatsby-source-filesystem will throw an error** if you fire up your theme and the “data” directory doesn’t exist. To guard against this, you’ll use the onPreBootstrap API hook to check if the data directory exists, and, if not, create it:
 
 
 Within gatsby-node.js:
@@ -28,7 +28,7 @@ exports.onPreBootstrap = ({ reporter }) => {
   }
 };
 ```
-With this code, if the data directory doesn't exist, it will create it. Now we have ensured that the data directory exists.
+With this code, **if the data directory doesn't exist, it will create it.** Now we have ensured that the data directory exists.
 
 
 ## Resources

@@ -3,7 +3,7 @@
 **[📹 Video](https://egghead.io/lessons/gatsby-display-and-query-data-by-id-with-gatsby-context-and-usestaticquery)**
 
 ## Individual Event Pages
-Our goal now is to create a template React component for each individual Event page.
+Our goal now is to **create a template React component for each individual Event page**.
 
 In event.js:
 ```javascript
@@ -22,7 +22,7 @@ export const query = graphql`
   }
 `;
 ```
-Now in our EventTemplate component, we pass in anything that goes into a page query as a data prop, and we refactor the component to use the Layout component:
+Now in our EventTemplate component, we *pass in anything that goes into a page query as a data prop*, and we *refactor the component to use the Layout component*
 ```javascript
 const EventTemplate = ({ data: { event } }) => (
   <Layout>
@@ -48,7 +48,7 @@ import Event from '../components/event';
 Back at our localhost:8000, we can click on one of our events to view the data associated with that event.
 
 ## Update the event component to format event data
-Again, our page displays raw data, so our goal now is to display the data as markup. In components/event.js, we refactor our Event component:
+Again, our page displays raw data, so **our goal now is to display the data as markup**. In components/event.js, we refactor our Event component:
 ```javascript
 const Event = ({ name, location, url, startDate, endDate }) => (
   <div>
