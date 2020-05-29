@@ -5,7 +5,7 @@
 ## Component Shadowing
 We return once more to component shadowing to modify components.
 
-This time, we plan to change theme colors in our theme-test project.
+This time, we plan to **change theme colors in our theme-test project**.
 
 ## Issues I Faced
 Following the lesson, I ran into issues importing the theme. **These issues were fixed after following the written lesson found in the [resources](#resources) below.** The following notes follow the written lesson, and employ lodash.merge
@@ -32,7 +32,7 @@ Restarting the dev server with
 gatsby develop
 ```
 Allows us to see a page with a blue header instead of a purple one.
-- "The new object exported from index.js uses lodash.merge to deeply merge the base UI theme with the theme overrides of your choice. In this case, changing the primary color to blue."
+- *"The new object exported from index.js uses lodash.merge to deeply merge the base UI theme with the theme overrides of your choice. In this case, changing the primary color to blue."*
 
 ## Override an entire component
 Now, to get back on track with the video again, we will first create a folder with the same title as your theme inside src
