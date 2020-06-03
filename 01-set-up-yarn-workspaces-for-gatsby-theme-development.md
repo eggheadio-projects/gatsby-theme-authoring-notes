@@ -127,7 +127,7 @@ Note that this only changes NODE_ENV for the current terminal, and will be reset
 If there is a better solution to this problem, please contribute!
 
 ## Resources
-- [Lesson 1](https://github.com/ParkerGits/authoring-gatsby-themes/tree/01-gatsby-set-up-yarn-workspaces-for-gatsby-theme-development)
+- [Lesson 1 Code](https://github.com/ParkerGits/authoring-gatsby-themes/tree/01-gatsby-set-up-yarn-workspaces-for-gatsby-theme-development)
 - [Yarn Workspaces, Why and How?](https://classic.yarnpkg.com/en/docs/workspaces/)
 - [What are Yarn Workspaces? - Daniel Bischoff](https://www.danielbischoff.com/blog/2018-03-04--share-code-workspaces/)
 - [What are Peer Dependencies?](https://flaviocopes.com/npm-peer-dependencies/)
