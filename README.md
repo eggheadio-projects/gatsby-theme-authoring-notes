@@ -1,4 +1,7 @@
 # [Gatsby Theme Authoring](https://egghead.io/courses/gatsby-theme-authoring)
+<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
+<!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 ## Instructor - [Jason Lengstorf](https://egghead.io/instructors/jason-lengstorf)
 
@@ -47,3 +50,22 @@ Each page of notes contains resources relating to the respective lesson. This co
 - [13-Consume a Theme in a Gatsby Application](13-consume-a-theme-in-a-gatsby-application.md)
 
 - [14-Use Component Shadowing to Override Gatsby Theme Components](14-use-component-shadowing-to-override-gatsby-theme-components.md)
+
+## Contributors ✨
+
+Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+<table>
+  <tr>
+    <td align="center"><a href="https://github.com/ParkerGits"><img src="https://avatars3.githubusercontent.com/u/45955761?v=4" width="100px;" alt=""/><br /><sub><b>Parker Landon</b></sub></a><br /><a href="#content-ParkerGits" title="Content">🖋</a></td>
+  </tr>
+</table>
+
+<!-- markdownlint-enable -->
+<!-- prettier-ignore-end -->
+<!-- ALL-CONTRIBUTORS-LIST:END -->
+
+This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
