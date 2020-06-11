@@ -2,11 +2,15 @@
 
 **[📹 Video](https://egghead.io/lessons/gatsby-add-static-data-to-a-gatsby-theme)**
 
-## events.yml
+## Summary
 
-In our gatsby-theme-events folder, add a new folder named "data" and within that create an events.yml file.
+In this lesson we learn how to load data from MDX (or any data source) and ensure the necessary folders exist.
 
-In the events.yml file, paste in the following:
+## ⚡ Getting the Data
+
+In our gatsby-theme-events folder, add a new folder named "data" and within that create an events.yml file. Then, within that:
+
+### gatsby-theme-events/data/events.yml
 ```
 - name: React Rally
   location: Salt Lake City, UT
@@ -32,12 +36,12 @@ In the events.yml file, paste in the following:
   end_date: 2019-11-08
   url: https://austin2019.theleaddeveloper.com/
 ```
-
+### ⚡ Reading the Data
 In order to read the .yaml file above, we must install new dependencies as follows:
 ```
 yarn workspace gatsby-theme-events add gatsby-source-filesystem gatsby-transformer-yaml
 ```
-## gatsby-config.js
+### gatsby-config.js
 Next, within the gatsby-theme-events folder, create a gatsby-config.js
 
 Following the lesson, our gatsby-config.js should look like:
@@ -59,12 +63,14 @@ module.exports = {
   ]
 }
 ```
-## GraphQL
+### ⚡ Starting the GraphQL server
 After running
 ```
 yarn workspace gatsby-theme-events develop
 ```
 We can access GraphQL at localhost:8000/\_\_\_graphql
+
+![GraphQL playground](./images/02-graphql-playground.png)
 
 Opening up *allEvent* then *nodes* on the side bar **allows us to query properties of our events.**
 

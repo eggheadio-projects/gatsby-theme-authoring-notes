@@ -2,8 +2,20 @@
 
 **[📹 Video](https://egghead.io/lessons/gatsby-set-up-to-create-data-driven-pages-in-gatsby)**
 
-## Defining the event type
-To satisfy the second condition in our list, *define the event type*, we add the following to gatsby-node.js
+## Summary
+
+In this lesson we learn how to load data from MDX (or any data source) and ensure the necessary folders exist.
+
+## ⚡ Defining types
+To satisfy the second condition in our list, we'll add an `id` which is of type `ID!`, and `name` and `location`, which are of type `String!`.
+
+For the date, we going to use Gatsby's built in `@dateformat` directive.
+
+We can do the same thing for the end date by copying the previous line and swapping out the names.
+
+Lastly we want to get the URL which is a string.
+
+### gatsby-theme-events/gatsby-node.js
 ```javascript
 exports.sourceNodes = ({ actions }) => {
   actions.createTypes(`
@@ -30,8 +42,10 @@ Note: for **startDate** and **endDate**, because the camel case does not line up
 
 We now need to define a custom resolver for our slug field, as we don't have a slug field in our events.
 
-## Defining resolvers for custom fields (slug)
+## ⚡ Setting up the slug
 To gatsby-node.js, add the following:
+
+### gatsby-theme-events/gatsby-node.js
 ```javascript
 exports.createResolvers = ({ createResolvers }) => {
   const basePath = '/'
@@ -58,9 +72,9 @@ The resolver above returns the "slugified" version of the event name.
 
 Documentation on Javascript Regular Expressions can be found in the [resources](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions). Otherwise, the instructor does a good job of explaining what the function does, so if you aren't familiar with Regular Expressions, just take the instructor's word for it.
 
-## GraphQL
+## ⚡ Testing it all out
 Running the following allows us to open our project in development mode:
-```
+```bash
 yarn workspace gatsby-theme-events develop
 ```
 Open up localhost:8000/\_\_\_graphql to view our newly formatted event nodes
@@ -72,3 +86,4 @@ The event type Date allows us to view *relative time* or *formatted time* for ou
 - [Regular Expressions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions)
 - [Gatsby - Define the Event type](https://www.gatsbyjs.org/tutorial/building-a-theme/#define-the-event-type)
 - [Gatsby - Define resolvers for any custom fields (slug)](https://www.gatsbyjs.org/tutorial/building-a-theme/#define-resolvers-for-any-custom-fields-slug)
+- [Gatsby - Create Resolvers](https://www.gatsbyjs.org/docs/node-apis/#createResolvers)

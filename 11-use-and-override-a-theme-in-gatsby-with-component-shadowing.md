@@ -2,51 +2,61 @@
 
 **[📹 Video](https://egghead.io/lessons/gatsby-use-and-override-a-theme-in-gatsby-with-component-shadowing)**
 
-## Using the theme
+## Summary
 
-To use the theme we defined in the previous lesson, we need to use *component shadowing* in order to override the default theme in gatsby-plugin-theme-ui
-- *“Component shadowing” is a mechanism to override the default rendering provided by a Gatsby theme*
+In this lesson we learn how to apply the styles we set to our theme.
+
+## ⚡ Using the theme
+
+To use the theme we defined in the previous lesson, we need to use *component shadowing* in order to override the default theme in `gatsby-plugin-theme-ui`
+- “Component shadowing” is a mechanism to *override the default rendering* provided by a Gatsby theme
 - Check out [resources](#resources) for a blog post on component shadowing.
 
 In gatsby-theme-events/src, we create a folder **with the same name as the theme in the source field**, and we *"shadow"* the index.js where the theme is defined.
 
-## Issues I Faced
+## ⚡ Issues I Faced
 **In the video, the instructor creates gatsby-theme-ui/index.js within gatsby-theme-events/src. However, my Gatsby site wouldn't compile unless I named the folder containing index.js "gatsby-plugin-theme-ui"**
 
-## Back to using the theme
+## ⚡ Back to using the theme
 Within gatsby-plugin-theme-ui/index.js:
+### gatsby-theme-events/src/gatsby-theme-ui/index.js
 ```javascript
 import { theme } from "../theme"
 
 export default theme
 ```
-Now we'll refactor our **Layout** component to use Theme UI.
+Now we'll refactor our `Layout` component to use Theme UI.
 
-Because **Layout**, **Header**, and **Main** are **deprecated**, we will import our theme components like so:
+Because `Layout`, `Header`, and `Main` are **deprecated**, we will import our theme components like so:
+
+### gatsby-theme-events/src/components/layout.js
 ```javascript
 import React from "react"
 import { Heading, Container } from "theme-ui"
 
-const Layout = ({ children }) => (
-  <ThemeLayout>
-  <Header><h1>Gatsby Events Theme</h1></Header>
-    <Main>
+const Layout = ({ children }) => {
+  return (
+    <div>
+      <Heading>Gatsby Events Theme</Heading>
       <Container>{children}</Container>
-    </Main>
-  </ThemeLayout>
-)
+    </div>
+  )
+}
 
 export default Layout
 ```
 We can now check if this works:
-```
+```bash
 yarn workspace site develop
 ```
+Once the site loads, you should see that our styles have been applied.
 
-## Using the Styled import
-We can also use the Styled import from theme-ui.
+![Site styled with theme](./images/11-styled.png)
+## ⚡ Using `Styled`
+We can also use the `Styled` import from `theme-ui` to apply the styles we set for HTML elements.
 
-In event-list.js:
+In `event-list.js`:
+### gatsby-theme-events/src/components/event-list.js
 ```javascript
 import React from 'react';
 import { Link } from 'gatsby';
@@ -84,3 +94,4 @@ export default EventList;
 - [Lesson 11 Code](https://github.com/ParkerGits/authoring-gatsby-themes/tree/11-use-and-override-a-theme-in-gatsby-with-component-shadowing)
 - [Gatsby - Use and override a theme with component shadowing](https://www.gatsbyjs.org/tutorial/building-a-theme/#use-and-override-a-theme-with-component-shadowing)
 -[Gatsby - What is Component Shadowing?](https://www.gatsbyjs.org/blog/2019-04-29-component-shadowing/)
+- [Theme UI Docs](https://theme-ui.com/getting-started)

@@ -1,8 +1,10 @@
 # Set up Yarn Workspaces for Gatsby Theme Development
 
 **[📹 Video](https://egghead.io/lessons/gatsby-set-up-yarn-workspaces-for-gatsby-theme-development)**
+## ⚡ Summary
 
-## Yarn Workspaces
+In this lesson, we learn how to structure folders and configure Yarn workspaces to make the development of Gatsby themes easier.
+## ⚡ Yarn Workspaces
 
 In this first lesson, the instructor walks us through the setup of Yarn Workspaces for our project.
 - More information and documentation on Yarn Workspaces can be found in the [resources](#resources) below.
@@ -52,6 +54,14 @@ Before opening up the terminal, here's what each package.json file should look l
 }
 ```
 
+Next we'll create `gatsby-theme-events/index.js` and leave it empty except for a comment.
+
+### gatsby-theme-events/index.js
+
+```js
+// this file is empty!
+```
+
 Now, in the terminal, we add **React, React-DOM, Gatsby,** and **our Gatsby Theme** to Site:
 ```
 yarn workspace site add gatsby react react-dom gatsby-theme-events@*
@@ -78,11 +88,11 @@ We can see that the site uses the gatsby-theme-events from the workspace:
 ]
 ```
 Now, to our gatsby-theme-events, we add React, React-DOM, and Gatsby firstly as a Peer Dependency
-```
+```bash
 yarn workspace gatsby-theme-events add -P react react-dom gatsby
 ```
 Then as a Dev Dependency
-```
+```bash
 yarn workspace gatsby-theme-events add -D react react-dom gatsby
 ```
 Now, gatsby-theme-events/package.json should include the following
@@ -131,3 +141,5 @@ If there is a better solution to this problem, please contribute!
 - [Yarn Workspaces, Why and How?](https://classic.yarnpkg.com/en/docs/workspaces/)
 - [What are Yarn Workspaces? - Daniel Bischoff](https://www.danielbischoff.com/blog/2018-03-04--share-code-workspaces/)
 - [What are Peer Dependencies?](https://flaviocopes.com/npm-peer-dependencies/)
+- [npm docs: private](https://docs.npmjs.com/files/package.json#private)
+- [npm docs: main](https://docs.npmjs.com/files/package.json#main)
