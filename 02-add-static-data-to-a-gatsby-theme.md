@@ -70,7 +70,7 @@ yarn workspace gatsby-theme-events develop
 ```
 We can access GraphQL at localhost:8000/\_\_\_graphql
 
-![GraphQL playground](./images/02-graphql-playground.png)
+![GraphQL playground](./images/02-add-static-data-to-a-gatsby-theme-graphql-playground.png)
 
 Opening up *allEvent* then *nodes* on the side bar **allows us to query properties of our events.**
 

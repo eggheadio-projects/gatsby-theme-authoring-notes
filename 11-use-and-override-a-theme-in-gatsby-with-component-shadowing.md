@@ -51,7 +51,7 @@ yarn workspace site develop
 ```
 Once the site loads, you should see that our styles have been applied.
 
-![Site styled with theme](./images/11-styled.png)
+![Site styled with theme](./images/11-use-and-override-a-theme-in-gatsby-with-component-shadowing-styled.png)
 ## ⚡ Using `Styled`
 We can also use the `Styled` import from `theme-ui` to apply the styles we set for HTML elements.
 

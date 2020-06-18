@@ -56,7 +56,7 @@ import Event from '../components/event';
 ```
 Back at our localhost:8000, we can click on one of our events to view the data associated with that event.
 
-![Individual event data on event page](./images/07-event-data.png)
+![Individual event data on event page](./images/07-display-and-query-data-by-id-with-gatsby-context-and-use-static-query.png)
 ### ⚡ Cleaning everything up
 Again, our page displays raw data, so **our goal now is to display the data as markup**. In `components/event.js`, we refactor our `Event` component:
 ```javascript
@@ -74,7 +74,7 @@ const Event = ({ name, location, url, startDate, endDate }) => (
 ```
 Our event data for individual event pages is now formatted. We can save this file and have a look at the browser, and we should see our updated event page.
 
-![Individual event data formatted on event page](./images/07-updated-event-page.png)
+![Individual event data formatted on event page](./images/07-display-and-query-data-by-id-with-gatsby-context-and-use-static-query-event-page.png)
 ## Resources
 - [Lesson 7 Code](https://github.com/ParkerGits/authoring-gatsby-themes/tree/07-display-and-query-data-by-id-with-gatsby-context-and-use-static-query)
 - [Gatsby - Display and query data by id with context and static queries](https://www.gatsbyjs.org/tutorial/building-a-theme/#display-and-query-data-by-id-with-context-and-static-queries)

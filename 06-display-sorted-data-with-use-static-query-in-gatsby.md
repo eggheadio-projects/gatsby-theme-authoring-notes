@@ -118,7 +118,7 @@ const EventList = ({ events }) => (
 ```
 Saving and returning to our localhost:8000 allows us to see the title and formatted date of each event, and clicking on each title allows us to see their respective page.
 
-![Page with formatted event data](./images/06-formatted.png)
+![Page with formatted event data](./images/06-06-display-sorted-data-with-use-static-query-in-gatsby-formatted.png)
 
 ## Resources
 - [Lesson 6 Code](https://github.com/ParkerGits/authoring-gatsby-themes/tree/06-display-sorted-data-with-use-static-query-in-gatsby)

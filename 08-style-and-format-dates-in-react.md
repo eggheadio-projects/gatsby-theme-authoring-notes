@@ -69,9 +69,9 @@ const Event = ({ name, location, url, startDate, endDate }) => (
 ```
 We can now view our pages on localhost:8000 and see that our one day, multiple day, and multiple month event dates are being displayed correctly.
 ### One Day
-![One day event date format](./images/08-one-day.png)
+![One day event date format](./images/08-style-and-format-dates-in-react-multiple-one-day.png)
 ### Multiple Day
-![Multiple day event date format](./images/08-multiple-day-before.png)
+![Multiple day event date format](./images/08-style-and-format-dates-in-react-multiple-day-before.png)
 
 ## ⚡ Issues I Faced
 For me personally, the dates for multiple day events were not displaying as they did in the video. For example, on the DinosaurJS page, the date was displayed as

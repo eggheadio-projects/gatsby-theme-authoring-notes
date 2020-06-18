@@ -89,11 +89,11 @@ yarn workspace gatsby-theme-events develop
 ```
 And navigate to localhost:8000 to see our events page.
 
-![Localhost events page](./images/05-events-page.png)
+![Localhost events page](./images/05-create-data-driven-pages-in-gatsby-with-graph-ql-and-create-pages.png)
 
 If we trigger the 404 page, we'll see that our event pages have also been created! 🎉
 
-![Localhost events page](./images/05-individual-pages.png)
+![Localhost events page](./images/05-create-data-driven-pages-in-gatsby-with-graph-ql-and-create-pages-individual-pages.png)
 
 ## Resources
 - [Lesson 5 Code](https://github.com/ParkerGits/authoring-gatsby-themes/tree/05-gatsby-create-data-driven-pages-in-gatsby-with-graphql-and-createpages)
