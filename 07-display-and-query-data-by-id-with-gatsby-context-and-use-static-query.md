@@ -2,10 +2,13 @@
 
 **[📹 Video](https://egghead.io/lessons/gatsby-display-and-query-data-by-id-with-gatsby-context-and-usestaticquery)**
 
-## Individual Event Pages
-Our goal now is to **create a template React component for each individual Event page**.
+## Summary
 
-In event.js:
+In this lesson we set up the individual event page.
+## ⚡ Querying the individual event data
+Our goal now is to **create a template React component for each individual `Event` page**.
+
+### src/templates/event.js
 ```javascript
 import { graphql } from 'gatsby'
 
@@ -22,17 +25,23 @@ export const query = graphql`
   }
 `;
 ```
-Now in our **EventTemplate** component, we *pass in anything that goes into a page query as a data prop*, and we *refactor the component to use the Layout component*
-```javascript
-const EventTemplate = ({ data: { event } }) => (
+## ⚡ Displaying the individual event data
+Now in our `EventTemplate` component, we *pass in anything that goes into a page query as a data prop*, and we *refactor the component to use the Layout component*
+### event.js
+```js
+
+...
+
+// We can destructure the data prop like this
+const EventTemplate = ({ data: { event } }) => {
   <Layout>
     <Event {...event} />
   </Layout>
-)
+}
 ```
-We've defined a new **Event** component above which will take in each event data node as a prop.
+We've defined a new `Event` component above which will take in each event data node as a prop.
 
-We must now create this **Event** component. In our components folder, create an event.js, and within:
+We must now create this `Event` component. In our components folder, create an event.js, and within:
 ```javascript
 import React from 'react';
 
@@ -47,8 +56,9 @@ import Event from '../components/event';
 ```
 Back at our localhost:8000, we can click on one of our events to view the data associated with that event.
 
-## Update the event component to format event data
-Again, our page displays raw data, so **our goal now is to display the data as markup**. In components/event.js, we refactor our **Event** component:
+![Individual event data on event page](./images/07-event-data.png)
+### ⚡ Cleaning everything up
+Again, our page displays raw data, so **our goal now is to display the data as markup**. In `components/event.js`, we refactor our `Event` component:
 ```javascript
 const Event = ({ name, location, url, startDate, endDate }) => (
   <div>
@@ -62,7 +72,9 @@ const Event = ({ name, location, url, startDate, endDate }) => (
   </div>
 )
 ```
-Our event data for individual event pages is now formatted.
+Our event data for individual event pages is now formatted. We can save this file and have a look at the browser, and we should see our updated event page.
+
+![Individual event data formatted on event page](./images/07-updated-event-page.png)
 ## Resources
 - [Lesson 7 Code](https://github.com/ParkerGits/authoring-gatsby-themes/tree/07-display-and-query-data-by-id-with-gatsby-context-and-use-static-query)
 - [Gatsby - Display and query data by id with context and static queries](https://www.gatsbyjs.org/tutorial/building-a-theme/#display-and-query-data-by-id-with-context-and-static-queries)

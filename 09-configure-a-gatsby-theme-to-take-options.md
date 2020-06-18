@@ -2,12 +2,12 @@
 
 **[📹 Video](https://egghead.io/lessons/gatsby-configure-a-gatsby-theme-to-take-options)**
 
-## Passing options to Gatsby-Config and Gatsby-Node
+## ⚡ Passing options to gatsby-config
 In a Gatsby theme, **one can pass options into the gatsby-config and gatsby-node**.
 
 We'll start by turning the gatsby-config into a function, and *passing in options as arguments to that function*.
 
-In gatsby-theme-events/gatsby-config.js:
+### gatsby-theme-events/gatsby-config.js
 ```javascript
 module.exports = ({ contentPath = "data", basePath = "/" }) => ({
   plugins: [
@@ -28,13 +28,19 @@ module.exports = ({ contentPath = "data", basePath = "/" }) => ({
 ```
 The options that were added as arguments to the function above *are now provided as a second argument to Gatsby's API hooks*.
 
-To use these options, we update gatsby-theme-events/gatsby-node.js:
+## ⚡ Passing options to gatsby-node
+
+In the `gatsby-node` file, options are passed as the second argument to the API hooks.
+
+Here we can set `contentPath` to `options.contentPath`, and set the fallback to 'data'.
+### gatsby-theme-events/gatsby-node.js
 ```javascript
 exports.onPreBootstrap = ({ reporter }, options) => {
   const contentPath = options.contentPath || "data"
   // ...
 }
 ```
+We can do the same thing for `createResolvers` and `createPages`.
 ```javascript
 exports.createResolvers = ({ createResolvers }, options) => {
   const basePath = options.basePath || "/"
@@ -47,7 +53,7 @@ exports.createPages = async ({ actions, graphql, reporter }, options) => {
   // ...
 }
 ```
-## Setting up site
+## ⚡ Setting up our site
 Because we've converted gatsby-theme-events to use a function export in gatsby-config, we can no longer run the theme on its own.
 
 **The function export in gatsby-config.js is only supported for themes.**
@@ -55,6 +61,7 @@ Because we've converted gatsby-theme-events to use a function export in gatsby-c
 We need to now setup site to consume gatsby-theme-events and run.
 
 Within site, create a gatsby-config.js file, and within that:
+### site/gatsby-config.js
 ```javascript
 module.exports = {
   plugins: [
@@ -70,6 +77,7 @@ module.exports = {
 ```
 When we run this theme through site, we should see an events folder get created, and we should have a page called events containing our event listings.
 
+## ⚡ Testing everything out
 To test, run the following in the terminal:
 ```
 yarn workspace site develop
@@ -79,7 +87,7 @@ We should be able to navigate to an events page, but **we don't have any events 
 Within the events directory that has just been created, copy over the events.yml file from the other events directory.
 
 After restarting Gatsby development with
-```
+```bash
 yarn workspace site develop
 ```
 We should see our events displayed on localhost:8000/events.

@@ -2,16 +2,23 @@
 
 **[📹 Video](https://egghead.io/lessons/gatsby-style-and-format-dates-in-react)**
 
-## Display reader-friendly dates
+## Summary
+
+In this lesson we learn how to make the event dates more human readable.
+
+## ⚡ Setting up the date component
 We're now going to take a look at **styling and formatting dates in React**.
 
-At the moment, *we are currently displaying the date by separating the startDate and the endDate with a hyphen*, **but this isn't ideal**.
+At the moment, we are currently displaying the date by separating the startDate and the endDate with a hyphen, **but this isn't ideal**.
 
-We're going to *refactor the Event component to improve the way that the date is displayed*.
+We're going to *refactor the Event component* to improve the way that the date is displayed.
 - If the event is one day, we want it to display like June 21 2019
 - For events spanning multiple days, we want the date to look like June 21-23 2019
 - If the event spans across months, we want it to look like June 30-July 2 2019
-In components/event.js, we create an EventDate component:
+
+To get started, we'll create a helper function `getDate`. That will take in our date, and we're going to pass in an object saying whether or not we want to show the day, month and year. All of those will default to `true`.
+
+### src/components/event.js
 ```javascript
 const getDate = (date, { day = true, month = true, year = true } = {}) =>
   date.toLocaleDateString("en-US", {
@@ -19,6 +26,12 @@ const getDate = (date, { day = true, month = true, year = true } = {}) =>
     month: month ? "long" : undefined,
     year: year ? "numeric" : undefined,
   })
+```
+Now we can use this helper function back inside of our `EventDate` component.
+
+Inside of the `time` tag, we'll call the function with the start date and tell it we only want to show the year if it's a one day event. We can also pass the start date to the time `dateTime` attribute.
+```js
+
 const EventDate = ({ startDate, endDate }) => {
   const start = new Date(startDate)
   const end = new Date(endDate)
@@ -40,7 +53,7 @@ const EventDate = ({ startDate, endDate }) => {
   )
 }
 ```
-We can now refactor our **Event** component to include **EventDate**:
+We can now refactor our `Event` component to include `EventDate`:
 ```javascript
 const Event = ({ name, location, url, startDate, endDate }) => (
   <div>
@@ -55,8 +68,12 @@ const Event = ({ name, location, url, startDate, endDate }) => (
 )
 ```
 We can now view our pages on localhost:8000 and see that our one day, multiple day, and multiple month event dates are being displayed correctly.
+### One Day
+![One day event date format](./images/08-one-day.png)
+### Multiple Day
+![Multiple day event date format](./images/08-multiple-day-before.png)
 
-## Personal Issues
+## ⚡ Issues I Faced
 For me personally, the dates for multiple day events were not displaying as they did in the video. For example, on the DinosaurJS page, the date was displayed as
 
 June 20-2019 (day:21)

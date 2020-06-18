@@ -2,9 +2,16 @@
 
 **[📹 Video](https://egghead.io/lessons/gatsby-create-data-driven-pages-in-gatsby-with-graphql-and-createpages)**
 
-## Create pages for event previews and individual event pages
+## Summary
 
-To begin our last step in gatsby-node.js, we set up the call to create the root page:
+In this lesson we learn how to use the createPages API hook.
+
+## ⚡ Creating our first page
+In this lesson we learn how to use the createPages API hook.
+
+To begin our final step in gatsby-node.js, we set up the call to create the root page:
+
+### gatsby-theme-events/gatsby-node.js
 ```javascript
 exports.createPages = async ({ actions, graphql, reporter }) => {
   const basePath = '/';
@@ -15,10 +22,14 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
 ```
 The basePath defaults to the root path, and the createPage method creates a page at the basePath.
 
+## ⚡ Querying the events
 Next, we'll set it up so we can query for events.
 
 The following will allow us to **retrieve all events, sorted by start date, in ascending order,** and will **allow us to handle the error in case the GraphQL query failed.**
-```javascript
+```js
+exports.createPages = ({ actions, graphql, reporter }) => {
+  ...
+
   const result = await graphql(`
     query {
       allEvent(sort: { fields: startDate, order: ASC }) {
@@ -28,13 +39,10 @@ The following will allow us to **retrieve all events, sorted by start date, in a
         }
       }
     }
-  `);
-
-  if(result.errors) {
-    reporter.panic('error loading events', reporter.errors);
-    return;
-  }
+  `)
+}
 ```
+## ⚡ Creating individual event pages
 Next, we'll create a page for each event by grabbing the event nodes queried from GraphQL, looping through the events, and using createPage.
 ```javascript
   const events = result.data.allEvent.nodes;
@@ -52,9 +60,12 @@ Next, we'll create a page for each event by grabbing the event nodes queried fro
   });
 }
 ```
+## ⚡ Creating the components
 Now, we need to actually create the event.js and events.js components.
 
-First, create src/templates/events.js within gatsby-theme-events. Within events.js:
+First, create src/templates/events.js within gatsby-theme-events.
+
+### events.js
 ```javascript
 import React from 'react';
 
@@ -63,6 +74,7 @@ const EventsTemplate = () => <p>TODO build the events page</p>;
 export default EventsTemplate;
 ```
 Then, create an event.js within src/templates, and within that:
+### event.js
 ```javascript
 import React from 'react';
 
@@ -70,14 +82,20 @@ const EventTemplate = () => <p>TODO build the events page</p>;
 
 export default EventTemplate;
 ```
+## ⚡ Testing it all out
 We can now run Gatsby in development mode:
-```
+```bash
 yarn workspace gatsby-theme-events develop
 ```
-And navigate to localhost:8000 to see "TODO build the events page"
+And navigate to localhost:8000 to see our events page.
 
-We can also navigate to localhost:8000/404 to see the pages for each of our events.
+![Localhost events page](./images/05-events-page.png)
+
+If we trigger the 404 page, we'll see that our event pages have also been created! 🎉
+
+![Localhost events page](./images/05-individual-pages.png)
 
 ## Resources
 - [Lesson 5 Code](https://github.com/ParkerGits/authoring-gatsby-themes/tree/05-gatsby-create-data-driven-pages-in-gatsby-with-graphql-and-createpages)
 - [Create data-driven pages using GraphQL and createPages](https://www.gatsbyjs.org/tutorial/building-a-theme/#create-data-driven-pages-using-graphql-and-createpages)
+- [createPages API](https://www.gatsbyjs.org/docs/node-apis/#createPages)
