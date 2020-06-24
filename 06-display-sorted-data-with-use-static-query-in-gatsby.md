@@ -86,7 +86,7 @@ Now we start up our server:
 yarn workspace gatsby-theme-events develop
 ```
 At localhost:8000, our layout shows up containing a dump of each event and its data.
-![Layout with events data](./images/06-layout.png)
+![Layout with events data](https://res.cloudinary.com/dg3gyk0gu/image/upload/v1593019627/transcript-images/06-display-sorted-data-with-use-static-query-in-gatsby-formatted.png.png)
 
 ### ⚡ Organizing and displaying the data
 Instead of raw data, **we want to display the event data in markup**.
