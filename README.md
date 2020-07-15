@@ -1,3 +1,5 @@
+<h1 align="center"><a href="https://github.com/eggheadio/eggheadio-course-notes">:warning: notes have been moved to eggheadio-course-notes!</a></h1>
+
 # [Gatsby Theme Authoring](https://egghead.io/courses/gatsby-theme-authoring)
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
 [![All Contributors](https://img.shields.io/badge/all_contributors-4-orange.svg?style=flat-square)](#contributors-)
